@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;600;800&display=swap');
-/* font-family: 'Encode Sans SC', sans-serif; */
-/* font-family: 'Inter', sans-serif; */
 
 :root {
     --primary: #ee3a6d;
@@ -9,7 +7,7 @@
     --bg_alt: #ffffff;
     --text: #4a4a4a;
     --font_text: 'inter', sans-serif;
-    --title_text: 'Encode Sans SC', sans-serif;
+    --font_tittle: 'Encode Sans SC', sans-serif;
     --transparent: rgba(255, 255, 255, 0.1)
 }
 
@@ -20,26 +18,17 @@
 }
 
 body {
-    display: flex;
-    margin-left: 75px;
     font-family: var(--font_text);
     font-size: 100%;
     letter-spacing: .2em;
-    z-index: 10;
     color: var(--text);
     background-color: var(--background);
     transition: all .5s linear;
 }
 
 body.dark {
-    --background: #282828;
+    --background: #1c1c1c;
     --bg_alt: #131313;
     --text: #e5e5e5;
     --transparent: rgba(0, 0, 0, 0.1)
-}
-
-main {
-    display: flex;
-    width: 100%;
-    height: 100vh;
 }
