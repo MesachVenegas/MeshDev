@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setLanguage } from '../../store/features/language';
 import { setTheme } from '../../store/features/theme';
