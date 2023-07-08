@@ -1,9 +1,10 @@
+import './onProcess.css';
 
 function OnProcess() {
     return (
-        <>
-            <img src="/images/working.svg" alt="working" />
-        </>
+        <div className="container">
+            <img src="/images/working.svg" alt="working"/>
+        </div>
     );
 }
 
