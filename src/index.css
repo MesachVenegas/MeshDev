@@ -4,13 +4,14 @@
 :root {
     --primary: #ee3a6d;
     --primary_alt: #581528f1;
-    --background: #fffdfd;
+    --background: #ece9e9;
     --bg_alt: #ffffff;
     --text: #4a4a4a;
     --text_alt: #f1f1f1;
     --font_text: 'inter', sans-serif;
     --font_tittle: 'Encode Sans SC', sans-serif;
-    --transparent: rgba(255, 255, 255, 0.1)
+    --transparent: rgba(255, 255, 255, 0.1);
+    --layer_bg : rgba(0, 0, 0, .8)
 }
 
 * {
