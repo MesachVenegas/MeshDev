@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setLanguage } from '../../store/features/language';
@@ -27,38 +26,38 @@ const Navbar = () => {
     return (
         <>
             <nav className="nav_container">
-                <Link href='/' className="brand_container">
+                <Link to='/' className="brand_container">
                     <img className="brand_logo" src='/assets/logo_rose.svg' height={48} width={48} alt="brand_logo" />
                     <img className="brand_text" src='/assets/text_logo.svg' height={60} width={120} alt="brand_logo" />
                 </Link>
 
                 <ul className="nav_menu">
                     <li className="menu_item">
-                        <Link href='/' className="menu_link">
+                        <Link to='/' className="menu_link">
                             <img src='/assets/home.png' height={40} width={40} alt="home-icon" />
                             <span>{ language ? 'Inicio' :'Home'}</span>
                         </Link>
                     </li>
                     <li className="menu_item">
-                        <Link href='/portfolio' className="menu_link">
+                        <Link to='/portfolio' className="menu_link">
                             <img src='/assets/maleting.png' height={40} width={40} alt="portfolio-icon" />
                             <span>{language ? 'Proyectos' : 'Portfolio'}</span>
                         </Link>
                     </li>
                     <li className="menu_item">
-                        <Link href='/about' className="menu_link">
+                        <Link to='/about' className="menu_link">
                             <img src='/assets/me_avatar.png' height={40} width={40} alt="about-icon" />
                             <span>{language ? 'Sobre Mí' : 'About Me'}</span>
                         </Link>
                     </li>
                     <li className="menu_item">
-                        <Link href='/skills' className="menu_link">
+                        <Link to='/skills' className="menu_link">
                             <img src='/assets/skills.png' height={40} width={40} alt="skills-icon" />
                             <span>{language ? 'Habilidades' : 'Skills'}</span>
                         </Link>
                     </li>
                     <li className="menu_item">
-                        <Link href='/contact' className="menu_link">
+                        <Link to='/contact' className="menu_link">
                             <img src='/assets/contact_2.png' height={40} width={40} alt="contact-icon" />
                             <span>{language ? 'Contácteme' : 'Contact Me'}</span>
                         </Link>

@@ -8,25 +8,20 @@ function Home() {
     return (
         <main>
             <main className='main_body'>
-                <div className='hero_container'>
-                    <div className='hero_text'>
-                        <p>{lang ? 'Hola!' : 'Hello!'}</p>
-                        <p>{lang ? 'Soy ' : "I'm "}<span className='main_text'>Mesach Venegas</span></p>
-                        <p>{lang ? 'Desarrollador Full Stack' : 'Full Stack Developer'}</p>
-                    </div>
-                    <button className='hero_btn'>
-                        {lang ? 'Descargar CV' : 'Download CV'}
-                        <span>
-                            <img src='/assets/download.png' width={40} height={40} alt='arrow-icon' />
-                        </span>
-                    </button>
+                <div className="hero_text">
+                    <p>
+                        {lang ? 'Hola!' : 'Hello!'} 👋🏼, <br />
+                        {lang ? "Soy " : "I'am"} <h1 className="main_text">Mesach Venegas</h1>
+                        {lang ? 'Desarrollador Full Stack' : 'Full Stack Developer'}
+                    </p>
+                    <a href="#" className="cv_btn">
+                        <span>{lang ? 'Curriculum' : 'Resumen'}</span>
+                        <img src="/assets/download.svg" alt="download_cloud" />
+                    </a>
                 </div>
-                <div className='hero_img'
-                    style={{
-                        backgroundImage: theme ? 'url(/assets/avatar_bg_pattern_light.png)' : 'url(/assets/avatar_bg_pattern.png)',
-                    }
-                }>
-                    <img src='/images/kindpng_1600378.png' alt='avatar_img' />
+                <div className="hero_view" style={{ backgroundImage: theme ? 'url(/assets/avatar_bg_pattern_light.png)' : 'url(/assets/avatar_bg_pattern.png)'}}>
+                    <img src="/images/avatar.png" alt="myPicture" />
+                    <hr className='hero_hr' />
                 </div>
             </main>
         </main>

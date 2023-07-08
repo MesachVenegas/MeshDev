@@ -3,9 +3,11 @@
 
 :root {
     --primary: #ee3a6d;
-    --background: #e7e7e7;
+    --primary_alt: #581528f1;
+    --background: #fffdfd;
     --bg_alt: #ffffff;
     --text: #4a4a4a;
+    --text_alt: #f1f1f1;
     --font_text: 'inter', sans-serif;
     --font_tittle: 'Encode Sans SC', sans-serif;
     --transparent: rgba(255, 255, 255, 0.1)
@@ -20,7 +22,6 @@
 body {
     font-family: var(--font_text);
     font-size: 100%;
-    letter-spacing: .2em;
     color: var(--text);
     background-color: var(--background);
     transition: all .5s linear;
@@ -30,5 +31,6 @@ body.dark {
     --background: #1c1c1c;
     --bg_alt: #131313;
     --text: #e5e5e5;
+    --text_alt: #acacac;
     --transparent: rgba(0, 0, 0, 0.1)
 }
