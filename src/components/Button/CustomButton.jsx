@@ -1,5 +1,6 @@
 import React from 'react';
 import { getContrastingColor } from '../../utils/helpers'
+import './style.css'
 
 const  CustomButton = ({ type, color, title, handleClick, customStyle }) => {
     const generateStyle = (type) => {
