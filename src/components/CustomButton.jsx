@@ -1,8 +1,7 @@
 import React from 'react';
-import { getContrastingColor } from '../../utils/helpers'
-import './style.css'
+import { getContrastingColor } from '../utils/helpers'
 
-const  CustomButton = ({ type, color, title, handleClick, customStyle }) => {
+const CustomButton = ({ type, color, title, handleClick, customStyle }) => {
     const generateStyle = (type) => {
         if (type === "filled") {
             return {

@@ -1,10 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { AnimatePresence, motion } from 'framer-motion';
-import { headContainerAnimation, slideAnimation } from '../../utils/motion';
+import { headContainerAnimation, slideAnimation } from '../utils/motion';
 import { useEffect } from 'react';
-import { setLanguage } from '../../store/features/language';
-import { setTheme } from '../../store/features/theme';
-import './styles.css'
+import { setLanguage } from '../store/features/language';
+import { setTheme } from '../store/features/theme';
 
 const Navbar = () => {
     const dispatch = useDispatch();
@@ -19,10 +18,6 @@ const Navbar = () => {
             document.body.classList.add('dark');
         }
     }, [theme])
-
-    useEffect(() => {
-
-    },[language])
 
     return (
         <AnimatePresence>

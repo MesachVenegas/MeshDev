@@ -1,4 +1,3 @@
-import './project.css'
 
 function ProjectCard({image, description, technologies, preview, code}) {
     return (
