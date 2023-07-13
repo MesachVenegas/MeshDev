@@ -35,3 +35,210 @@ body.dark {
     --text_alt: #acacac;
     --transparent: rgba(0, 0, 0, 0.1)
 }
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 85px;
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, .2);
+    transition: height .4s linear;
+    background-color: var(--bg_alt);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.brand_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 5px;
+    gap: 1.5em;
+}
+
+.nav_container:hover {
+    height: 580px;
+}
+
+.nav_container:hover .config_text {
+    display: inline;
+}
+
+.nav_container:hover+.layer {
+    display: flex;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 90%;
+    gap: .5em;
+    width: 100%;
+}
+
+.menu_item {
+    width: 270px;
+    height: 50px;
+}
+
+.menu_link {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.config_menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.config_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    gap: .5em;
+    cursor: pointer;
+}
+
+.config_text {
+    display: none;
+    color: var(--text);
+}
+
+.config_text-language {
+    display: grid;
+    position: absolute;
+    place-content: center;
+    border-radius: 1em;
+    letter-spacing: 0;
+    width: 25px;
+    height: 20px;
+    font-size: 90%;
+    top: 5px;
+    right: -8px;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--primary);
+}
+
+.layer {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0px;
+    height: 100vh;
+    background-color: var(--transparent);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(3px);
+    z-index: 90;
+}
+
+@media screen and (min-width: 992px) {
+    .nav_container {
+        width: 75px;
+        height: 100vh;
+        transition: width .4s linear;
+    }
+
+    .nav_container:hover {
+        height: 100%;
+        width: 380px;
+    }
+
+    .nav_menu {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5em;
+    }
+
+}
+
+.project_card {
+    position: relative;
+    width: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.project_card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card_layer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_alt);
+    left: 0;
+    width: 100%;
+    gap: 1em;
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.project_card:hover {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+
+.project_card:hover .card_layer {
+    bottom: 0;
+    padding: 2em;
+    height: 100%;
+    background-color: var(--layer_bg);
+}
+
+.icons_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 789px) {
+    .project_card {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .project_card {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project_card {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .project_card {
+        width: 650px;
+    }
+}
