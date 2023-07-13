@@ -33,7 +33,7 @@
     display: inline;
 }
 
-.nav_container:hover+.layer {
+.nav_container:hover + .layer {
     display: flex;
 }
 
@@ -109,13 +109,14 @@
     left: 0px;
     height: 100vh;
     background-color: var(--transparent);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(3px);
     z-index: 90;
 }
 
 @media screen and (min-width: 992px) {
     .nav_container {
-        width: 70px;
+        width: 75px;
         height: 100vh;
         transition: width .4s linear;
     }
