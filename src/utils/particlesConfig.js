@@ -22,7 +22,7 @@ export const presets = {
                 quantity: 2,
             },
             repulse: {
-                distance: 30,
+                distance: 40,
                 duration: 0.4,
             },
         },
@@ -35,8 +35,8 @@ export const presets = {
             color: "#ee3a6d",
             distance: 150,
             enable: true,
-            opacity: 0.5,
-            width: 2,
+            opacity: 0.7,
+            width: 1,
         },
         move: {
             direction: "none",
@@ -45,7 +45,7 @@ export const presets = {
                 default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 3,
             straight: false,
         },
         number: {
