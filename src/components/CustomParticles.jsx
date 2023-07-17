@@ -7,9 +7,9 @@ import { loadFull } from 'tsparticles';
 const CustomParticles = () => {
     const theme = useSelector(state => state.theme);
 
-    const particlesInit = async (engine) => {
+    const particlesInit = useCallback(async (engine) => {
         await loadFull(engine);
-    };
+    });
 
     useEffect( () => {
 
