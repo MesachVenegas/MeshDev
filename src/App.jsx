@@ -1,4 +1,5 @@
 import { Navbar } from './components';
+import CustomParticles from './components/CustomParticles';
 
 function App() {
 
@@ -6,7 +7,9 @@ function App() {
         <>
             <Navbar />
             <main>
-                <h1>Mesach Venegas</h1>
+                <section className='hero_container'>
+                    <CustomParticles />
+                </section>
             </main>
         </>
     );
