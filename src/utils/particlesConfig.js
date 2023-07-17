@@ -1,7 +1,7 @@
 export const presets = {
     background: {
         color: {
-            value: '#ece9e9',
+            value: 'transparent',
         },
     },
     fpsLimit: 120,

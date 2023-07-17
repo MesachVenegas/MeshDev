@@ -21,7 +21,6 @@ const CustomParticles = () => {
             className='tsparticles'
             init={particlesInit}
             style={{
-                border: '1px solid red',
                 width: '100%',
                 height: '100px'
             }}
