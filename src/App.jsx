@@ -15,6 +15,7 @@ function App() {
                         <div className="welcome">
                             <span>Hi! 👋🏼</span>
                             <h1>I'am <span className='main_text'>Mesach Venegas</span></h1>
+                            <h2>Full Stack Developer</h2>
                             <CustomTypeWritter strings={["React", "NodeJs", "Redux", "Express"]}/>
                         </div>
                         <ul className="social">
