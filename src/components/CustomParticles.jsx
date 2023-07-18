@@ -18,12 +18,8 @@ const CustomParticles = () => {
     return (
         <Particles
             id='tsparticles'
-            className='tsparticles'
             init={particlesInit}
-            style={{
-                width: '100%',
-                height: '100px'
-            }}
+            className='particles'
             options={ presets }
         />
     );

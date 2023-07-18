@@ -22,7 +22,7 @@ export const presets = {
                 quantity: 2,
             },
             repulse: {
-                distance: 40,
+                distance: 50,
                 duration: 0.4,
             },
         },
