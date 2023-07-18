@@ -1,4 +1,5 @@
 import { CustomParticles, Navbar } from './components';
+import CustomTypeWritter from './components/CustomTypeWritter';
 
 function App() {
 
@@ -14,18 +15,17 @@ function App() {
                         <div className="welcome">
                             <span>Hi! 👋🏼</span>
                             <h1>I'am <span className='main_text'>Mesach Venegas</span></h1>
-                            <h2>Full Stack Developer</h2>
-                            <span>React</span>
+                            <CustomTypeWritter strings={["React", "NodeJs", "Redux", "Express"]}/>
                         </div>
                         <ul className="social">
                             <li className='social_item'>
                                 <a href="#" className='social_link'>
-                                    <img src="/assets/github_icon.png" alt="github_icon" />
+                                    <i className="fa-brands fa-github"></i>
                                 </a>
                             </li>
                             <li className='social_item'>
                                 <a href="#" className='social_link'>
-                                    <img src="/assets/linkedin.png" alt="linkedin_icon" />
+                                    <i className="fa-brands fa-linkedin"></i>
                                 </a>
                             </li>
                         </ul>
