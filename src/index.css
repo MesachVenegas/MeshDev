@@ -3,7 +3,7 @@
 
 :root {
     --primary: #ee3a6d;
-    --primary_alt: #581528f1;
+    --primary_alt: #581528a2;
     --background: #ece9e9;
     --bg_alt: #ffffff;
     --text: #4a4a4a;
@@ -226,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     justify-content: center;
     padding: 2em;
+    gap: 4em;
     width: 100%;
     height: 100%;
 }
@@ -266,6 +267,110 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
+.resume_btn {
+    text-decoration: none;
+    padding: .5em 2em;
+    border-radius: 1em;
+    font-weight: bold;
+    color: var(--text_alt);
+    background-color: var(--primary_alt);
+    animation: heartbeat 1.5s ease-in-out infinite both ;
+}
+
+.resume_btn:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+
+/*
+* ----------------------------------------
+* Key Frames
+* ----------------------------------------
+*/
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+/*
+* ----------------------------------------
+* Break Points
+* ----------------------------------------
+*/
 @media screen and (min-width: 789px) {
     .project_card {
         width: 450px;
@@ -292,6 +397,11 @@ h1, h2, h3, h4, h5, h6 {
 
     .project_card {
         width: 350px;
+    }
+
+    .hero_container {
+        font-size: 150%;
+        width: 80%;
     }
 }
 
