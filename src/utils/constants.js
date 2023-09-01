@@ -10,3 +10,7 @@ export const homeWriter = [
     "API REST Full",
     "Sequelize"
 ]
+
+export const techs = {
+    
+}

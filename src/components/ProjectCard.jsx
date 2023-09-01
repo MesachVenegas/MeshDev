@@ -1,26 +1,25 @@
 
-function ProjectCard({image, description, technologies, preview, code}) {
+function ProjectCard({image, tittle, technologies, preview_site, github_link}) {
     return (
-        <div className="project_card">
-            <img src="/images/project_1.jpg" alt="" />
-            <div className='card_layer'>
-                <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam praesentium minus tempore accusantium quidem repudiandae quod nam sapiente dolorum quasi obcaecati possimus necessitatibus, totam rerum velit tenetur quis nulla voluptatibus!</p>
-                <div className="icons_container">
-                    <ul className="tech">
-                        <li>HTML & CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>NodeJs</li>
-                        <li>Express</li>
-                        <li>Redux</li>
-                    </ul>
-                    <ul className="links">
-                        <li>Preview online</li>
-                        <li>Github</li>
-                    </ul>
+        <div className="project_item" style={{ backgroundImage: "url('/public/images/Pokedex_preview.png')"}}>
+            <a href="#" class="project_item-link">
+
+                <div className="project_item-bg">
                 </div>
-            </div>
+
+                <img className="project_item-img" src=""/>
+
+                <div className="project_item-title">
+                    { tittle }
+                </div>
+
+                <div className="project_item-tech-box">
+                    Stack:
+                    <span className="project_item-date">
+                        { technologies }
+                    </span>
+                </div>
+            </a>
         </div>
     );
 }

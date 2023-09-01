@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { CustomParticles, Navbar } from './components';
 import { homeWriter } from './utils/constants';
 import { useSelector } from 'react-redux';
+import Portfolio from './pages/Portfolio';
 
 function App() {
     const language = useSelector(state => state.language);
@@ -15,7 +16,7 @@ function App() {
                 <CustomParticles />
             </header>
             <AnimatePresence>
-                <motion.main >
+                <motion.main  className='main_body'>
                     <motion.section id='home' className='hero_container' {...slideAnimation('down')}>
                         <motion.div className='hero_content' {...headContainerAnimation}>
                             <motion.div className="welcome" {...headContentAnimation}>
@@ -46,6 +47,7 @@ function App() {
                             <motion.a {...slideAnimation('up')} href='#' className='resume_btn'>{language ? "Trabajemos Juntos" :"Let's Work Together"}</motion.a>
                         </motion.div>
                     </motion.section>
+                    <Portfolio />
                 </motion.main>
             </AnimatePresence>
         </>
