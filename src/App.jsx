@@ -39,8 +39,8 @@ function App() {
                                     </motion.a>
                                 </motion.li>
                                 <motion.li className='social_item'>
-                                    <motion.a href="https://www.instagram.com/mesh_dev/" className='social_link' target='_blank'>
-                                        <motion.i class="fa-brands fa-instagram"></motion.i>
+                                    <motion.a href="https://api.whatsapp.com/send?phone=5216631662698&text=Quiero%20trabajar%20contigo" className='social_link' target='_blank'>
+                                        <i className="fa-brands fa-whatsapp"></i>
                                     </motion.a>
                                 </motion.li>
                             </motion.ul>
