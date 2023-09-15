@@ -1,14 +1,22 @@
 import React from 'react';
-import ProjectCard from './../components/ProjectCard';
+import ProjectCard from '../components/Cards/ProjectCard';
+import { projects } from "../utils/constants";
 
 const Portfolio = () => {
+
+
     return (
         <section className='container_section' id='portfolio'>
-            <h1>Portfolio</h1>
-            <p>Let's show my work</p>
+            <div className='project_title'>
+                <h1>Portfolio</h1>
+                <p>Let's show my work</p>
+            </div>
             <div className='project_container'>
-                <ProjectCard tittle={"Pokedex App"} preview_site={'/images/Pokedex_preview.png'}/>
-                <ProjectCard tittle={"E-commerce"} />
+                {projects.map(project => (
+                    <ProjectCard key={project.title} data={project} />
+                ))
+
+                }
             </div>
         </section>
     );
