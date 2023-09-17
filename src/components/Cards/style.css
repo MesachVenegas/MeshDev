@@ -1,8 +1,8 @@
 .card {
     position: relative;
     left: 0;
-    width: 100%;
-    height: 230px;
+    width: 350px;
+    height: 190px;
     margin: auto;
     background-color: var(--background);
     border-radius: 8px;
@@ -15,43 +15,42 @@
 }
 
 .card:hover {
-    cursor: pointer;
-    transform: scale(1.02);
+    transform: translateY(-5px);
 }
 
 .card figcaption {
     display: flex;
     flex-wrap: wrap;
-    padding: 2em 1em;
+    font-size: 0.7rem;
+    padding: 2em 1.5em;
 
-    > h3 {
+    >h3 {
         width: 100%;
     }
 
-    > p {
+    >p {
         width: 100%;
         height: 40%;
     }
 
     >h3 {
+        font-size: 1.5em;
         color: #fff;
     }
 }
 
-.card:hover figcaption{
+.card:hover figcaption {
     position: absolute;
     display: flex;
     align-items: end;
-    font-size: 0.6rem;
     color: #fff;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 140px;
+    height: 170px;
     background: linear-gradient(to top,
-            rgba(0, 0, 0, .9) 50%,
-            rgba(0, 0, 0, 0) 80%
-    );
+            rgba(0, 0, 0, .9) 70%,
+            rgba(0, 0, 0, 0) 95%);
 }
 
 .card:hover~.card {
@@ -66,19 +65,99 @@
     border-radius: 4px;
 }
 
-@media screen and (min-width: 489px) {
-    .card {
-        width: 350px;
-    }
+.figure_foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 
-    .card img {
-        height: 250px;
+.tech_stack {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    list-style: none;
+    width: 50%;
+
+    >li {
+        display: grid;
+        place-content: center;
+        gap: .5em;
+        width: 30px;
+        height: 30px;
+
+        >img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 }
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 1em;
+
+    >li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        width: 120px;
+        height: 30px;
+        border-radius: 1.5em;
+        background-color: var(--primary);
+
+        &:hover,
+        &:hover a {
+            background: silver;
+            color: #000;
+        }
+
+        >a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 489px) {
+    .card {
+        width: 400px;
+        height: 220px;
+    }
+
+    /* .card img {
+        height: 280px;
+    } */
+
+    .tech_stack{
+        width: 30%;
+    }
+
+    .links {
+
+        > li {
+            width: 90px;
+
+            > a {
+                font-size: .9em;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 589px) {
     .card {
-        width: 300px;
-        height: 220px;
+        width: 500px;
+        height: 290px;
     }
 
     .card img {
@@ -94,5 +173,15 @@
 
     .card img {
         height: 280px;
+    }
+
+    .tech_stack {
+        width: 50%;
+
+        > li {
+            width: 30px;
+            height: 30px;
+
+        }
     }
 }
