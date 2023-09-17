@@ -23,10 +23,10 @@ function ProjectCard({ data }) {
                         </ul>
                         <ul className='links'>
                             <li>
-                                <a href={data.repository}>Repository</a>
+                                <a href={data.repository}>{language ? "Repositorio" : "Repository"}</a>
                             </li>
                             <li>
-                                <a href={data.site}>Site</a>
+                                <a href={data.site}>{language ? "Pagina" : "Page"}</a>
                             </li>
                         </ul>
                     </div>
