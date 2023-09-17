@@ -6,7 +6,7 @@ const Portfolio = () => {
 
 
     return (
-        <section className='container_section' id='portfolio'>
+        <>
             <div className='project_title'>
                 <h1>Portfolio</h1>
                 <p>Let's show my work</p>
@@ -18,7 +18,7 @@ const Portfolio = () => {
 
                 }
             </div>
-        </section>
+        </>
     );
 };
 

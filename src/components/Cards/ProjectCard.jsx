@@ -6,7 +6,7 @@ function ProjectCard({ data }) {
     const language = useSelector(state => state.language);
 
     return (
-        <article className="project_item">
+        <motion.article className="project_item">
             <figure className="card">
                 <img src={data.url} alt={data.title} title={data.title} />
                 <figcaption>
@@ -32,7 +32,7 @@ function ProjectCard({ data }) {
                     </div>
                 </figcaption>
             </figure>
-        </article>
+        </motion.article>
     );
 }
 

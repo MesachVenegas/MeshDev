@@ -17,6 +17,7 @@ function App() {
             </header>
             <AnimatePresence>
                 <motion.main  className='main_body'>
+
                     <motion.section id='home' className='hero_container' {...slideAnimation('down')}>
                         <motion.div className='hero_content' {...headContainerAnimation}>
                             <motion.div className="welcome" {...headContentAnimation}>
@@ -47,7 +48,11 @@ function App() {
                             <motion.a {...slideAnimation('up')} href='#' className='resume_btn'>{language ? "Trabajemos Juntos" :"Let's Work Together"}</motion.a>
                         </motion.div>
                     </motion.section>
-                    <Portfolio />
+
+                    <motion.section className='container_section' id='portfolio' {...headContainerAnimation}>
+                        <Portfolio />
+                    </motion.section>
+
                 </motion.main>
             </AnimatePresence>
         </>
