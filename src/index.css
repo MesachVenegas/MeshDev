@@ -11,7 +11,8 @@
     --font_text: 'inter', sans-serif;
     --font_tittle: 'Encode Sans SC', sans-serif;
     --transparent: rgba(255, 255, 255, 0.1);
-    --layer_bg: rgba(0, 0, 0, .8)
+    --layer_bg: rgba(0, 0, 0, .8);
+    scroll-behavior: smooth;
 }
 
 * {
@@ -235,11 +236,14 @@ h6 {
     color: var(--primary);
 }
 
-.resume_btn {
+.btn {
     text-decoration: none;
     padding: .5em 2em;
     border-radius: 1em;
     font-weight: bold;
+}
+
+.btn-resume {
     color: var(--text_alt);
     background-color: var(--primary_alt);
     animation: heartbeat 1.5s ease-in-out infinite both;

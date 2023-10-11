@@ -5,6 +5,7 @@ import { CustomParticles, Navbar } from './components';
 import { homeWriter } from './utils/constants';
 import { useSelector } from 'react-redux';
 import Portfolio from './pages/Portfolio';
+import AboutMe from './pages/aboutme/AboutMe';
 
 function App() {
     const language = useSelector(state => state.language);
@@ -45,12 +46,16 @@ function App() {
                                     </motion.a>
                                 </motion.li>
                             </motion.ul>
-                            <motion.a {...slideAnimation('up')} href='#' className='resume_btn'>{language ? "Trabajemos Juntos" :"Let's Work Together"}</motion.a>
+                            <motion.a {...slideAnimation('up')} href='#' className='btn btn-resume'>{language ? "Trabajemos Juntos" :"Let's Work Together"}</motion.a>
                         </motion.div>
                     </motion.section>
 
                     <motion.section className='container_section' id='portfolio' {...headContainerAnimation}>
                         <Portfolio />
+                    </motion.section>
+
+                    <motion.section className='container_section' id='about' {...headContainerAnimation}>
+                        <AboutMe />
                     </motion.section>
 
                 </motion.main>

@@ -109,12 +109,11 @@
         width: 120px;
         height: 30px;
         border-radius: 1.5em;
-        background-color: var(--primary);
+        background: silver;
 
         &:hover,
         &:hover a {
-            background: silver;
-            color: #000;
+            background-color: var(--primary);
         }
 
         >a {
