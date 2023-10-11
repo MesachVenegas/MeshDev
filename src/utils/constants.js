@@ -8,7 +8,7 @@ export const homeWriter = [
     "Express",
     "PostgreSQL",
     "API REST Full",
-    "Sequelize"
+    "Sequelize",
 ]
 
 export const projects = [
@@ -17,7 +17,7 @@ export const projects = [
         title: "Pokedex",
         description_es: "web app con información de los pokemons existentes",
         description_en: "web app with information of the pokemons",
-        techs: ['react', 'redux', "axios"],
+        techs: ['react', 'redux', "axios",'api'],
         repository: "https://github.com/MesachVenegas/PokedexWeb",
         site: "https://pokedex-mesach.netlify.app"
     },
@@ -35,8 +35,17 @@ export const projects = [
         title: "E-commerce Shop",
         description_es: "Proyecto E-Commerce Academlo, creación de tienda en linea con login y carrito de compras",
         description_en: "E-Commerce Academlo project, creation of an online store with login and shopping cart",
-        techs: ['react', 'redux', "axios", "bootstrap"],
+        techs: ['react', 'redux', "axios", "bootstrap",'api'],
         repository: "https://github.com/MesachVenegas/Ecommer-React",
         site: "https://ecommer-node.netlify.app"
+    },
+    {
+        url: "./images/paqueteria.png",
+        title: "Paqueteria 5 Estrellas",
+        description_es: "Proyecto de websita de una paqueteria para la cotización y seguimiento de los envíos de paqueteria.",
+        description_en: "Website project for a parcel company for quoting and tracking parcel shipments.",
+        techs: ['react','javascript','api'],
+        repository: "",
+        site: "https://paqueteria5estrellas.online"
     },
 ]
