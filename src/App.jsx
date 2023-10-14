@@ -6,6 +6,7 @@ import { homeWriter } from './utils/constants';
 import { useSelector } from 'react-redux';
 import Portfolio from './pages/Portfolio';
 import AboutMe from './pages/aboutme/AboutMe';
+import Contact from './pages/contact/Contact';
 
 function App() {
     const language = useSelector(state => state.language);
@@ -56,6 +57,10 @@ function App() {
 
                     <motion.section className='container_section' id='about' {...headContainerAnimation}>
                         <AboutMe />
+                    </motion.section>
+
+                    <motion.section className='container_section' id='contact' {...headContainerAnimation}>
+                        <Contact />
                     </motion.section>
 
                 </motion.main>

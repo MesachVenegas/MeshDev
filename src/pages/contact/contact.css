@@ -1,0 +1,141 @@
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 1em;
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--primary);
+}
+
+.input_wrapper {
+    position: relative;
+    padding: 15px 0 0;
+
+    > input {
+        width: 100%;
+    }
+
+    >label,
+    .input_field:focus ~.input_label {
+        position: absolute;
+        top: 2px;
+        padding: 0 4px;
+        background-color: var(--primary);
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        left: 8px;
+        transition: 0.3s;
+    }
+}
+
+.input_field {
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px;
+    padding-right: 32px;
+    background: transparent;
+    border-bottom: 1px solid #3c3c3c;
+    transition: border-color 0.2s;
+
+    &:placeholder-shown ~ .input_label {
+        font-size: 1rem;
+        cursor: text;
+        color: #3c3c3c;
+        top: 20px;
+    }
+
+    .input_field:focus ~ .input_label {
+        color: #fff;
+    }
+
+    &::placeholder{
+        color: transparent;
+    }
+
+    &:focus {
+        border-bottom: 1px solid #fff;
+        outline: none;
+    }
+}
+
+.input_icon {
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+    width: 28px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.input_field:focus ~ .input_icon {
+    color: #fff;
+}
+
+.input_textarea {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid #3c3c3c;
+    padding: 8px;
+    background: transparent;
+}
+
+.input_textarea:focus{
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.btn_contact {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    border-radius: 1em;
+    font-weight: bold;
+    padding: .5em;
+    width: 200px;
+    color: var(--text);
+    background: var(--background);
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0,.9);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form_box {
+        width: 70%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .form_box {
+        width: 50%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
+}
