@@ -4,6 +4,7 @@ import CustomParticles from './CustomParticles';
 import CustomTypeWritter from './CustomTypeWritter';
 import Navbar from './Navbar';
 import Contact from './contact/Contact';
+import Footer from './footer/Footer';
 
 export {
     ProjectCard,
@@ -11,6 +12,7 @@ export {
     CustomParticles,
     CustomTypeWritter,
     Navbar,
-    Contact
+    Contact,
+    Footer
 
 }
