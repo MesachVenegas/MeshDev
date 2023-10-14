@@ -6,7 +6,11 @@
     width: 100%;
     padding: 2em 0;
     gap: 2em;
-    margin-bottom: 2em;
+    background-color: var(--primary);
+
+    > h2 {
+        color: #fff;
+    }
 }
 
 .form_box {
@@ -17,7 +21,6 @@
     padding: 2em 1em;
     width: 100%;
     min-height: 400px;
-    background-color: var(--primary);
 }
 
 .input_wrapper {
@@ -125,9 +128,18 @@
 }
 
 @media screen and (min-width: 768px) {
+    .contact_container{
+        background: var(--background);
+
+        > h2 {
+            color: var(--text);
+        }
+    }
+
     .form_box {
         width: 70%;
         border-radius: 8px;
+        background: var(--primary);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     }
 }
