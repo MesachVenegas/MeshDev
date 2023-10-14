@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <>
             <div className="title">
-                <h2>Sobre mi</h2>
+                <h2>{language ? "Sobre mi" : "About me"}</h2>
             </div>
             <div className="container">
                 <figure className='fig_avatar'>
@@ -32,7 +32,7 @@ const AboutMe = () => {
                                 </a>
                             </li>
                         </ul>
-                        <a className='btn btn-fig' href='#contact'>Contact Me</a>
+                        <a className='btn btn-fig' href='#contact'>{ language ? "Contactarme" : "Contact me"}</a>
                     </figcaption>
                 </figure>
                 <div className="text_container">
@@ -46,6 +46,35 @@ const AboutMe = () => {
                             language ? "Mi entusiasmo por aprender se refleja en mi disposición para explorar nuevas tecnologías y metodologías. Estoy convencido de que la versatilidad es clave en el mundo del desarrollo, y estoy constantemente buscando maneras de mejorar y adaptarme a las últimas tendencias. En busca de mi primera oportunidad laboral, estoy emocionado por contribuir con mis conocimientos y habilidades a un equipo dinámico. Mi objetivo es no solo aportar al crecimiento de la empresa, sino también seguir evolucionando como desarrollador. ¡Estoy listo para sumergirme en nuevos retos y alcanzar nuevos horizontes en mi desarrollo profesional!" : "My enthusiasm for learning is reflected in my willingness to explore new technologies and methodologies. I am convinced that versatility is key in the world of development, and I am constantly looking for ways to improve and adapt to the latest trends. Looking for my first job opportunity, I am excited to contribute my knowledge and skills to a dynamic team. My goal is not only to contribute to the growth of the company, but also to continue evolving as a developer. I am ready to immerse myself in new challenges and reach new horizons in my professional development!"
                         }
                     </p>
+                </div>
+            </div>
+            <div className="skill_container" id='skills'>
+                <h2>{language ? "Habilidades":"Skills"}</h2>
+                <div className='skills'>
+                    <figure className='skill_item' id='git'>
+                        <img src="/assets/git.svg" alt="git_icon" title='Git'/>
+                    </figure>
+                    <figure className='skill_item' id='github'>
+                        <img src="/assets/github.svg" alt="github_icon" title='GitHub'/>
+                    </figure>
+                    <figure className='skill_item' id='postgres'>
+                        <img src="/assets/postgresql.svg" alt="github_icon" title='PostgreSQL'/>
+                    </figure>
+                    <figure className='skill_item' id='sequelize'>
+                        <img src="/assets/sequelize.svg" alt="sequelize_icon" title='Sequelize ORM'/>
+                    </figure>
+                    <figure className='skill_item' id='node'>
+                        <img src="/assets/node.svg" alt="node_icon" title='NodeJs'/>
+                    </figure>
+                    <figure className='skill_item' id='react'>
+                        <img src="/assets/react.svg" alt="react_icon" title='ReactJs'/>
+                    </figure>
+                    <figure className='skill_item' id='python'>
+                        <img src="/assets/python.svg" alt="python_icon" title='Python'/>
+                    </figure>
+                    <figure className='skill_item' id='python'>
+                        <img src="/assets/javascript.svg" alt="javascript_icon" title='JavaScript'/>
+                    </figure>
                 </div>
             </div>
         </>

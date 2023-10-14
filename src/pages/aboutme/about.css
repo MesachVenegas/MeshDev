@@ -61,7 +61,81 @@
 }
 
 
+.skill_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.skill_item {
+    display: grid;
+    place-content: center;
+    max-width: 250px;
+
+    > img {
+        width: 100%;
+        filter: grayscale(95%);
+        transition: all 0..5s ease;
+
+        &:hover {
+            filter: grayscale(0);
+            transition: all 0..5s ease;
+            animation: shake 1s linear infinite;
+        }
+    }
+}
+
+#git:hover{
+    filter: drop-shadow(0 0 20px #ee513b);
+}
+#github:hover{
+    filter: drop-shadow(0 0 20px #3e75c3);
+}
+#postgres:hover{
+    filter: drop-shadow(0 0 20px #336791);
+}
+#sequelize:hover{
+    filter: drop-shadow(0 0 20px #03afef);
+}
+#node:hover{
+    filter: drop-shadow(0 0 20px #83cd29);
+}
+#react:hover{
+    filter: drop-shadow(0 0 20px #00d8ff);
+}
+#python:hover{
+    filter: drop-shadow(0 0 20px  #fcd024);
+}
+
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
+    .skill_item{
+        width: 200px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -72,5 +146,10 @@
     }
     .text_container {
         width: 60%;
+    }
+
+    .skill_container {
+        width: 90%;
+        margin: auto;
     }
 }
