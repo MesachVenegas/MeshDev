@@ -1,12 +1,11 @@
 import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from './utils/motion';
 import CustomTypeWritter from './components/CustomTypeWritter';
 import { AnimatePresence, motion } from 'framer-motion';
-import { CustomParticles, Navbar } from './components';
+import { Contact, CustomParticles, Navbar } from './components';
 import { homeWriter } from './utils/constants';
 import { useSelector } from 'react-redux';
 import Portfolio from './pages/Portfolio';
 import AboutMe from './pages/aboutme/AboutMe';
-import Contact from './pages/contact/Contact';
 
 function App() {
     const language = useSelector(state => state.language);
