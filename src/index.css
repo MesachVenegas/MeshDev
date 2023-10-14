@@ -10,7 +10,7 @@
     --text_alt: #f1f1f1;
     --font_text: 'inter', sans-serif;
     --font_tittle: 'Encode Sans SC', sans-serif;
-    --transparent: rgba(255, 255, 255, 0.1);
+    --transparent: rgba(255, 255, 255, 0.4);
     --layer_bg: rgba(0, 0, 0, .8);
     scroll-behavior: smooth;
 }
@@ -34,7 +34,7 @@ body.dark {
     --bg_alt: #131313;
     --text: #e5e5e5;
     --text_alt: #acacac;
-    --transparent: rgba(0, 0, 0, 0.1)
+    --transparent: rgba(0, 0, 0, 0.3)
 }
 
 h1,

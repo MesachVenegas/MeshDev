@@ -17,17 +17,17 @@ const AboutMe = () => {
                     <figcaption className='fig_avatar'>
                         <ul className='social'>
                             <li className='social_item'>
-                                <a className='social_link' href="#">
+                                <a className='social_link' href="https://github.com/MesachVenegas">
                                     <i className="fa-brands fa-github"></i>
                                 </a>
                             </li>
                             <li className='social_item'>
-                                <a className='social_link' href="#">
+                                <a className='social_link' href="https://www.linkedin.com/in/mesachvenegas/">
                                     <i className="fa-brands fa-linkedin"></i>
                                 </a>
                             </li>
                             <li className='social_item'>
-                                <a className='social_link' href="#">
+                                <a className='social_link' href="https://api.whatsapp.com/send?phone=5216631662698&text=Quiero%20trabajar%20contigo">
                                     <i className="fa-brands fa-whatsapp"></i>
                                 </a>
                             </li>
