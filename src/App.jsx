@@ -1,7 +1,7 @@
 import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from './utils/motion';
 import CustomTypeWritter from './components/CustomTypeWritter';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Contact, CustomParticles, Navbar } from './components';
+import { Contact, CustomParticles, Footer, Navbar } from './components';
 import { homeWriter } from './utils/constants';
 import { useSelector } from 'react-redux';
 import Portfolio from './pages/Portfolio';
@@ -63,6 +63,7 @@ function App() {
                     </motion.section>
 
                 </motion.main>
+                <Footer />
             </AnimatePresence>
         </>
     );
