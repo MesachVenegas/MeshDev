@@ -1,34 +1,40 @@
 import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from './utils/motion';
-import CustomTypeWritter from './components/CustomTypeWritter';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Contact, CustomParticles, Footer, Navbar } from './components';
 import { homeWriter } from './utils/constants';
+import { CustomParticles } from './components';
 import { useSelector } from 'react-redux';
-import Portfolio from './pages/Portfolio';
-import AboutMe from './pages/aboutme/AboutMe';
+import { Suspense, lazy } from 'react';
+
+const Navbar = lazy(() => import('./components/Navbar'));
+const CustomTypeWritter =  lazy(() => import('./components/CustomTypeWritter'));
+const AboutMe = lazy(() => import('./pages/aboutme/AboutMe'));
+const Contact = lazy(() => import('./components/contact/Contact'));
+const Portfolio = lazy( () => import('./pages/Portfolio'));
+const Footer = lazy(() => import('./components/footer/Footer'));
+
 
 function App() {
     const language = useSelector(state => state.language);
 
     return (
-        <>
+        <Suspense>
             <header>
                 <Navbar />
                 <CustomParticles />
             </header>
             <AnimatePresence>
-                <motion.main  className='main_body'>
+                <motion.main className='main_body'>
 
                     <motion.section id='home' className='hero_container' {...slideAnimation('down')}>
+                        {/* hero section */}
                         <motion.div className='hero_content' {...headContainerAnimation}>
                             <motion.div className="welcome" {...headContentAnimation}>
                                 <motion.span>{language ? "Hola!" : "Hi!"} 👋🏼</motion.span>
                                 <motion.h1>{language ? "Soy" : "I'am"} <motion.span className='main_text'>Mesach Venegas</motion.span></motion.h1>
                                 <motion.h2>{language ? "Desarrollador Fullstack" : "FullStack Developer"}</motion.h2>
-                                <CustomTypeWritter
-                                    strings={homeWriter}
-                                />
+                                <CustomTypeWritter strings={homeWriter} />
                             </motion.div>
+                            {/* social links */}
                             <motion.ul className="social" {...headTextAnimation}>
                                 <motion.li className='social_item'>
                                     <motion.a href="https://github.com/MesachVenegas" className='social_link' target='_blank'>
@@ -46,26 +52,30 @@ function App() {
                                     </motion.a>
                                 </motion.li>
                             </motion.ul>
-                            <motion.a {...slideAnimation('up')} href='#' className='btn btn-resume'>{language ? "Trabajemos Juntos" :"Let's Work Together"}</motion.a>
+                            {/* call to action buttons */}
+                            <motion.div className="btn_wrapper" {...headTextAnimation}>
+                                <motion.a {...slideAnimation('up')} href='#' className='btn btn_resume'>{language ? "Descargar CV" : "Download Resume"}</motion.a>
+                                <motion.a {...slideAnimation('up')} href='#contact' className='btn btn_cv'>{language ? "Trabajemos Juntos" : "Work Together"}</motion.a>
+                            </motion.div>
                         </motion.div>
                     </motion.section>
-
+                    {/* project */}
                     <motion.section className='container_section' id='portfolio' {...headContainerAnimation}>
                         <Portfolio />
                     </motion.section>
-
+                    {/* about me */}
                     <motion.section className='container_section' id='about' {...headContainerAnimation}>
                         <AboutMe />
                     </motion.section>
-
+                    {/* contact form */}
                     <motion.section className='container_section' id='contact' {...headContainerAnimation}>
                         <Contact />
                     </motion.section>
-
                 </motion.main>
+                {/* footer */}
                 <Footer />
             </AnimatePresence>
-        </>
+        </Suspense>
     );
 }
 
