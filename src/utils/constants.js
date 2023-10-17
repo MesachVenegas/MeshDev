@@ -17,7 +17,7 @@ export const projects = [
         title: "Pokedex",
         description_es: "web app con información de los pokemons existentes",
         description_en: "web app with information of the pokemons",
-        techs: ['react', 'redux', "axios",'api'],
+        techs: ['react', 'redux', "axios"],
         repository: "https://github.com/MesachVenegas/PokedexWeb",
         git: "public",
         site: "https://pokedex-mesach.netlify.app"
@@ -37,7 +37,7 @@ export const projects = [
         title: "E-commerce Shop",
         description_es: "Proyecto E-Commerce Academlo, creación de tienda en linea con login y carrito de compras",
         description_en: "E-Commerce Academlo project, creation of an online store with login and shopping cart",
-        techs: ['react', 'redux', "axios", "bootstrap",'api'],
+        techs: ['react', 'redux', "axios", "bootstrap"],
         repository: "https://github.com/MesachVenegas/Ecommer-React",
         git: "public",
         site: "https://ecommer-node.netlify.app"
@@ -47,7 +47,7 @@ export const projects = [
         title: "Paqueteria 5 Estrellas",
         description_es: "Proyecto de websita de una paqueteria para la cotización y seguimiento de los envíos de paqueteria.",
         description_en: "Website project for a parcel company for quoting and tracking parcel shipments.",
-        techs: ['react','javascript','api'],
+        techs: ['react','javascript'],
         repository: "https://github.com/MesachVenegas/paq5estrellas",
         git: "public",
         site: "https://paqueteria5estrellas.online"

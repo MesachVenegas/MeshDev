@@ -9,39 +9,46 @@ const Contact = () => {
             <div className="contact_container">
                 <h2>{language ? "Contacto" : "Contact Me"}</h2>
                 <form className='form_box'>
+                    {/* name field */}
                     <div className="input_wrapper">
                         <input
-                            className='input_field'
+                            id='name'
+                            name='name'
                             type="text"
+                            className='input_field'
                             placeholder='John Smith'
                             required
                         />
-                        <label htmlFor="" className='input_label'>
+                        <label htmlFor="name" className='input_label'>
                             { language ? "Nombre" : "Name"}
                         </label>
                         <i className="fa-solid fa-user input_icon"></i>
                     </div>
+                    {/* email field */}
                     <div className="input_wrapper">
                         <input
-                            className='input_field'
+                            id='email'
+                            name='email'
                             type="text"
+                            className='input_field'
                             placeholder='example@example.com'
                             required
                         />
-                        <label htmlFor="" className='input_label'>
+                        <label htmlFor="email" className='input_label'>
                             { language ? "Correo" : "Email"}
                         </label>
                         <i className="fa-solid fa-at input_icon"></i>
                     </div>
+                    {/* message field */}
                     <div className="input_wrapper">
                         <textarea
-                            className='input_textarea'
-                            name='message'
                             id='message'
+                            name='message'
                             cols="30"
+                            className='input_textarea'
                             required
                         />
-                        <label htmlFor="" className='input_label'>
+                        <label htmlFor="message" className='input_label'>
                             { language ? "Mensaje" : "Message"}
                         </label>
                     </div>

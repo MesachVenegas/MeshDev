@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="head_foot">
                 {/* brand */}
                 <figure className='foot_brand'>
-                    <img src="/assets/logo_rose.svg" alt="" />
+                    <img src="/assets/logo_rose.svg" alt="meshdev_logo" />
                     <img className="brand_text" src='/assets/text_logo.svg' alt="brand_logo" />
                 </figure>
                 {/* social links */}

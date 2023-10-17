@@ -9,6 +9,7 @@
     --text: #4a4a4a;
     --text_alt: #f1f1f1;
     --font_text: 'inter', sans-serif;
+    --bt_bg: #3c3c3c;
     --font_tittle: 'Encode Sans SC', sans-serif;
     --transparent: rgba(255, 255, 255, 0.4);
     --layer_bg: rgba(0, 0, 0, .8);
@@ -33,7 +34,8 @@ body.dark {
     --background: #1c1c1c;
     --bg_alt: #131313;
     --text: #e5e5e5;
-    --text_alt: #acacac;
+    --bt_bg: #0c0c0c;
+    --text_alt: #c7c7c7;
     --transparent: rgba(0, 0, 0, 0.3)
 }
 
@@ -237,19 +239,38 @@ h6 {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding: .5em 2em;
-    border-radius: 1em;
+    padding: .5em;
+    height: 50px;
+    border-radius: 8px;
     font-weight: bold;
 }
 
-.btn-resume {
+.btn_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.btn_resume {
     color: var(--text_alt);
-    background-color: var(--primary_alt);
+    min-width: 250px;
+    background-color: var(--bt_bg);
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-.resume_btn:hover {
+.btn_cv {
+    color: var(--text_alt);
+    min-width: 250px;
+    background-color: var(--bt_bg);
+    animation: heartbeat 1.5s ease-in-out .5s infinite both ;
+}
+
+.btn_resume:hover,
+.btn_cv:hover {
     transform: translateY(-5px);
     background-color: var(--primary);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
