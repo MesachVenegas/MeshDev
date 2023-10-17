@@ -13,7 +13,7 @@ export const homeWriter = [
 
 export const projects = [
     {
-        url: "./images/Pokedex_preview.png",
+        url: "./images/Pokedex_preview.webp",
         title: "Pokedex",
         description_es: "web app con información de los pokemons existentes",
         description_en: "web app with information of the pokemons",
@@ -23,7 +23,7 @@ export const projects = [
         site: "https://pokedex-mesach.netlify.app"
     },
     {
-        url: "./images/BVS_preview.png",
+        url: "./images/BVS_preview.webp",
         title: "BVS Advising",
         description_es: "Website para BVS Advising consultora chilena de diversas ramas",
         description_en: "Website for BVS Advising, a Chilean consulting company in various branches",
@@ -33,7 +33,7 @@ export const projects = [
         site: "https://bvsadvising.com"
     },
     {
-        url: "./images/Ecommerce_preview.png",
+        url: "./images/Ecommerce_preview.webp",
         title: "E-commerce Shop",
         description_es: "Proyecto E-Commerce Academlo, creación de tienda en linea con login y carrito de compras",
         description_en: "E-Commerce Academlo project, creation of an online store with login and shopping cart",
@@ -43,7 +43,7 @@ export const projects = [
         site: "https://ecommer-node.netlify.app"
     },
     {
-        url: "./images/paqueteria.png",
+        url: "./images/paqueteria.webp",
         title: "Paqueteria 5 Estrellas",
         description_es: "Proyecto de websita de una paqueteria para la cotización y seguimiento de los envíos de paqueteria.",
         description_en: "Website project for a parcel company for quoting and tracking parcel shipments.",

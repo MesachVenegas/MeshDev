@@ -12,7 +12,7 @@ const AboutMe = () => {
             <div className="container">
                 <figure className='fig_avatar'>
                     <div className="avatar">
-                        <img src="/images/me.jpg" alt="avatar_img"/>
+                        <img src="/images/me.webp" alt="avatar_img"/>
                     </div>
                     <figcaption className='fig_avatar'>
                         <ul className='social'>
