@@ -50,6 +50,6 @@ export const projects = [
         techs: ['react','javascript'],
         repository: "https://github.com/MesachVenegas/paq5estrellas",
         git: "public",
-        site: "https://paqueteria5estrellas.online"
+        site: "https://www.paqueteria5estrellas.com"
     },
 ]
